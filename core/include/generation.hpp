@@ -36,6 +36,7 @@ enum class Generation
     SIX,
     SEVEN,
     LGPE,
+    EIGHT,
     UNUSED = 0xFF
 };
 
