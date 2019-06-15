@@ -35,6 +35,8 @@ const char* genToCstring(Generation gen)
 {
     switch (gen)
     {
+        case Generation::EIGHT:
+            return "8";
         case Generation::LGPE:
             return "LGPE";
         case Generation::FOUR:
@@ -77,6 +79,9 @@ bool operator<(Generation g1, Generation g2)
         case Generation::LGPE:
             return g2 == Generation::UNUSED;
         case Generation::UNUSED:
+        case Generation::EIGHT:
+            return g2 == Generation::UNUSED;
+        case Generation==UNUSED:
         default:
             return false;
     }
